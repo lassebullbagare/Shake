@@ -1,3 +1,7 @@
+import android.content.Context;
+import android.content.res.Resources;
+import android.widget.ImageView;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -42,14 +46,20 @@ public class GifList {
         return bild;
     }
 
-    public String getImage(){
+    public String getImage(Context context){
 
         Date n = new Date();
-    String bild = "";
     if(d!=n){
         bild = randomBild();
+        String id = "imageView";
+        int resID = context.getResources().getIdentifier(id , "id", "main.res.layout");
+        ImageView image = (ImageView) findViewById(resID);
         d = n;
     }
     return bild;
     }
+
+
+
+
 }
