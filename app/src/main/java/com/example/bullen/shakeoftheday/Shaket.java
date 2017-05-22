@@ -22,7 +22,7 @@ public class Shaket extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shaket);
-        this.getImage();
+
     }
 
 
