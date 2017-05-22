@@ -34,15 +34,11 @@ public class Shaket extends AppCompatActivity {
             gif.add(5, "drawable/kram2.gif");
             gif.add(6, "drawable/chest.gif");
 
-
-
-        }
-
-        public Date getDate(Date d) {
             DateFormat format = new SimpleDateFormat("yyyy/mm/dd");
             d = new Date();
+            bild = "drawable/kram.gif";
 
-            return d;
+
         }
 
         public String randomBild() {
