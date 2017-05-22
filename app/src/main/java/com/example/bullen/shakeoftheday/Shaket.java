@@ -38,7 +38,7 @@ public class Shaket extends AppCompatActivity {
 
             DateFormat format = new SimpleDateFormat("yyyy/mm/dd");
             d = new Date();
-            bild = "drawable/cool.gif";
+            bild = getImage();
             Log.i(TAG, "Välkommen");
 
         }
