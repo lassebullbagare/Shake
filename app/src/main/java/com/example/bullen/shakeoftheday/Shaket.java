@@ -18,7 +18,7 @@ public class Shaket extends AppCompatActivity {
     public Random slumpaBild;
     private Date d;
     private String bild;
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shaket);
