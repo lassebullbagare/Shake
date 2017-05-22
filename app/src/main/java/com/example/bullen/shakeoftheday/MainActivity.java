@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         knapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println("hej");
 
                 Intent shake = new Intent(MainActivity.this, Shaket.class);
                 startActivity(shake);
