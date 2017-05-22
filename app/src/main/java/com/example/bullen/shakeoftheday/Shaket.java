@@ -3,6 +3,7 @@ package com.example.bullen.shakeoftheday;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
 import java.text.DateFormat;
@@ -12,6 +13,7 @@ import java.util.Date;
 import java.util.Random;
 
 public class Shaket extends AppCompatActivity {
+    private final String TAG = "DagensShakeApp";
     public ArrayList<String> gif;
     public Random slumpaBild;
     private Date d;
@@ -37,7 +39,7 @@ public class Shaket extends AppCompatActivity {
             DateFormat format = new SimpleDateFormat("yyyy/mm/dd");
             d = new Date();
             bild = "drawable/kram.gif";
-            System.out.println("hej");
+            Log.i(TAG, "Välkommen");
 
         }
 
