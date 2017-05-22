@@ -12,25 +12,19 @@ import java.util.Date;
 import java.util.Random;
 
 public class Shaket extends AppCompatActivity {
-
+    public ArrayList<String> gif;
+    public Random slumpaBild;
+    private Date d;
+    private String bild;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shaket);
+        this.getImage();
     }
 
 
-    /**
-     * Created by bullen on 2017-05-11.
-     */
-
-    public class GifList {
-        public ArrayList<String> gif;
-        public Random slumpaBild;
-        private Date d;
-        private String bild;
-
-        public GifList() {
+        public void gif() {
             ArrayList<String> gif = new ArrayList<>();
             gif.add(0, "drawable/skak.gif");
             gif.add(1, "drawable/high.gif");
@@ -73,4 +67,4 @@ public class Shaket extends AppCompatActivity {
             return bild;
         }
 
-    }}
+    }
