@@ -58,7 +58,7 @@ public class Shaket extends AppCompatActivity {
                 bild = randomBild();
                 String id = "imageView";
                 int resID = getResources().getIdentifier(id, "drawable", "main.res.layout");
-                ImageView image = (ImageView) findViewById(resID);
+                ImageView image = null;
                 image.setImageResource(resID);
                 d = n;
             }
