@@ -59,7 +59,7 @@ public class Shaket extends AppCompatActivity {
             return bild;
         }
 
-        public String getImage(Context context) {
+        public String getImage() {
 
             Date n = new Date();
             if (d != n) {
