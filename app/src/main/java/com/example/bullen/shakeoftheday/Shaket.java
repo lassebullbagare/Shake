@@ -24,8 +24,8 @@ public class Shaket extends AppCompatActivity {
     }
 
 
-        public void gif() {
-            ArrayList<String> gif = new ArrayList<>();
+        public Shaket() {
+            gif = new ArrayList<>();
             gif.add(0, "drawable/skak.gif");
             gif.add(1, "drawable/high.gif");
             gif.add(2, "drawable/will.gif");
@@ -33,7 +33,7 @@ public class Shaket extends AppCompatActivity {
             gif.add(4, "drawable/kram.gif");
             gif.add(5, "drawable/kram2.gif");
             gif.add(6, "drawable/chest.gif");
-            Date datum;
+
 
 
         }
