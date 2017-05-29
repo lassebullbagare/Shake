@@ -24,7 +24,6 @@ public class Shaket extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shaket);
-        getImage();
 
 
     }
@@ -43,7 +42,7 @@ public class Shaket extends AppCompatActivity {
             DateFormat format = new SimpleDateFormat("yyyy/mm/dd");
             d = new Date();
 
-
+            getImage();
             Log.i(TAG, "Välkommen");
 
 
