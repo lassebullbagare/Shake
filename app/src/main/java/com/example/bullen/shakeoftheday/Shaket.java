@@ -25,7 +25,7 @@ public class Shaket extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shaket);
-
+        getImage();
 
     }
 
@@ -60,7 +60,7 @@ public class Shaket extends AppCompatActivity {
         public int getImage() {
 
             Date n = new Date();
-            if (d.before(n)) {
+            if (!d.equals(n)) {
                 bild = randomBild();
                 String id = "imageView";
                 int resID = getResources().getIdentifier(id, "drawable", "main.res.layout");
