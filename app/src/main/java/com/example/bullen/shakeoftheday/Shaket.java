@@ -40,6 +40,7 @@ public class Shaket extends AppCompatActivity {
             d = new Date();
             bild = "drawable/cool.gif";
             Log.i(TAG, "Välkommen");
+            this.getImage();
 
         }
 
