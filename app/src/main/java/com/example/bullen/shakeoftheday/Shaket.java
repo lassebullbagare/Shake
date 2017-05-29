@@ -20,7 +20,6 @@ public class Shaket extends AppCompatActivity {
     public Random slumpaBild;
     private Date d;
     private int bild;
-    private ImageView nybild;
     private ImageView image;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,7 @@ public class Shaket extends AppCompatActivity {
             DateFormat format = new SimpleDateFormat("yyyy/mm/dd");
             d = new Date();
 
-            nybild.setImageDrawable(getResources().getDrawable(R.drawable.skak));
+            image.setImageDrawable(getResources().getDrawable(R.drawable.skak));
 
             Log.i(TAG, "Välkommen");
 
