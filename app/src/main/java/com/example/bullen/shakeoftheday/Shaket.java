@@ -12,12 +12,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
 
+import static com.example.bullen.shakeoftheday.R.drawable.skak;
+
 public class Shaket extends AppCompatActivity {
     private final String TAG = "DagensShakeApp";
-    public ArrayList<String> gif;
+    public ArrayList<Integer> gif;
     public Random slumpaBild;
     private Date d;
-    private String bild;
+    private int bild;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,38 +31,38 @@ public class Shaket extends AppCompatActivity {
 
         public Shaket() {
             gif = new ArrayList<>();
-            gif.add(0, "drawable/skak.gif");
-            gif.add(1, "drawable/high.gif");
-            gif.add(2, "drawable/will.gif");
-            gif.add(3, "drawable/cool.gif");
-            gif.add(4, "drawable/kram.gif");
-            gif.add(5, "drawable/kram2.gif");
-            gif.add(6, "drawable/chest.gif");
+            gif.add(R.drawable.skak);
+            gif.add(R.drawable.high);
+            gif.add(R.drawable.will);
+            gif.add(R.drawable.cool);
+            gif.add(R.drawable.kram);
+            gif.add(R.drawable.kram2);
+            gif.add(R.drawable.chest);
 
             DateFormat format = new SimpleDateFormat("yyyy/mm/dd");
             d = new Date();
-            bild = "drawable/cool.gif";
+            bild = R.drawable.cool;
             Log.i(TAG, "Välkommen");
             this.getImage();
 
         }
 
-        public String randomBild() {
-            String bild;
+        public int randomBild() {
+            int bild;
             int index = slumpaBild.nextInt(gif.size());
-            bild = gif.get(index);
+            bild =gif.get(index);
             System.out.println("Bild " + bild);
             return bild;
         }
 
-        public String getImage() {
+        public int getImage() {
 
             Date n = new Date();
             if (d.before(n)) {
                 bild = randomBild();
                 String id = "imageView";
                 int resID = getResources().getIdentifier(id, "drawable", "main.res.layout");
-                ImageView image = null;
+                ImageView image =null;
                 image.setImageResource(resID);
                 d = n;
             }
