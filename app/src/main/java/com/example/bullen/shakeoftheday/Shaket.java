@@ -70,5 +70,5 @@ public class Shaket extends AppCompatActivity {
             }
             return bild;
         }
-
+//final
     }
